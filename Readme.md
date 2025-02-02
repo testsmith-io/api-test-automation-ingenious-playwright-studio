@@ -32,6 +32,22 @@ All examples in this repository are designed to work with the **Practice Softwar
    cd api-test-automation-ingenious-playwright-studio
    ```
 3. Open INGenious Playwright Studio and run the tests:
+* `Windows`
+  
+  Double click on the [`Run.bat`](#) in the framework location
+
+* `Mac or Ubuntu`
+
+    1. Open Terminal in the installation location and then type 
+    ```shell
+    chmod +x Run.command
+    ```
+    2. Then double click on the [`Run.command`](#)
+    3. If you see **It's Downloaded From Internet** warning then enter the following command in terminal: 
+     ```shell
+     xattr -d -r com.apple.quarantine "/path/to/the framework"
+     ```
+
 
 ## Automated Workflow
 The repository includes a GitHub Actions workflow to automatically execute the tests.  
