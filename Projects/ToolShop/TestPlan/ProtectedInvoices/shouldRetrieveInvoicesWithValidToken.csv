@@ -1,0 +1,12 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Webservice,"Set End Point ",setEndPoint,@https://api.practicesoftwaretesting.com/users/login,,
+2,Webservice,"Add Header ",addHeader,@Content-type=application/json,,
+3,Webservice,"POST Rest Request ",postRestRequest,"{  ""email"": ""customer@practicesoftwaretesting.com"",  ""password"": ""welcome01"" }",,
+4,Webservice,"Assert Response Code ",assertResponseCode,@200,,
+5,Webservice,Store JSON Element,storeJSONelement,@$.access_token,%token%,
+6,Webservice,"Close the connection ",closeConnection,,,
+7,Webservice,"Set End Point ",setEndPoint,@https://api.practicesoftwaretesting.com/invoices,,
+8,Webservice,"Add Header ",addHeader,@Authorization=Bearer %token%,,
+9,Webservice,"GET Rest Request ",getRestRequest,,,
+10,Webservice,"Assert Response Code ",assertResponseCode,@200,,
+11,Webservice,"Close the connection ",closeConnection,,,

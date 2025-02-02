@@ -1,0 +1,4 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,Brands,shouldRetrieveAtLeastTwoBrands,Single,Passed,No Browser,Default,Any
+true,Login,shouldReturnAccessTokenOnSuccessfulLogin,Single,Passed,No Browser,Default,Any
+true,ProtectedInvoices,shouldRetrieveInvoicesWithValidToken,Single,Passed,No Browser,Default,Any
